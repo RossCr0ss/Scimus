@@ -1,7 +1,7 @@
 // Write your styles here
 
 body {
-    font-family: -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
     background: $color-white
 }
 
@@ -51,7 +51,7 @@ body {
                     text-align: center;
                     text-transform: uppercase;
                     padding: 15px;
-                    border-right: 1px solid $color-white;
+                    border-right: 2px solid $color-gray-line;
                 }
 
                 &-item:last-child {
@@ -88,6 +88,8 @@ body {
 
             &-input {
                 padding: 8px 16px;
+                border-color: $color-gray-line;
+                margin-right: 15px;
             }
         }
 
@@ -208,9 +210,7 @@ body {
 
     .footer {
         display: flex;
-        justify-content: center;
-        padding: 30px 0 10px;
-        text-transform: uppercase;
+        padding: 30px 10px 10px;
     }
 
 }
