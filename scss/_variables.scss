@@ -1,9 +1,20 @@
 
 /// White color
 /// @type Color
-$color-white: rgb(255, 255, 255) !default;
-
+$color-white: #fff !default;
 
 /// Aqua color
 /// @type Color
 $color-aqua: #00aeae !default;
+
+/// Gray color
+/// @type Color
+$color-gray: #f0f0f0 !default;
+
+/// Red color
+/// @type Color
+$color-red: #ea0000 !default;
+
+/// Gray line color
+/// @type Color
+$color-gray-line: #5f7e8c !default;

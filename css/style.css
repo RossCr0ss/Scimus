@@ -312,8 +312,8 @@ template {
   display: none; }
 
 body {
-  font-family: -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, Helvetica , 'Helvetica Neue', sans-serif;
-  background: white; }
+  font-family: -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, 'Helvetica Neue', sans-serif;
+  background: #fff; }
 
 .main-wrapper .header {
   width: 100%;
@@ -321,10 +321,7 @@ body {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  /* display: flex;
-  flex-direction: column;
-  align-items: space-between; */ }
+  background-size: cover; }
   .main-wrapper .header .top-wrapper {
     display: flex;
     justify-content: space-between;
@@ -341,12 +338,12 @@ body {
         width: calc(100% / 3);
         text-align: center;
         text-transform: uppercase;
-        padding: 10px;
-        border-right: 1px solid white; }
+        padding: 15px;
+        border-right: 1px solid #fff; }
       .main-wrapper .header .top-wrapper .nav-menu-item:last-child {
         border-right: none; }
   .main-wrapper .header .header-title {
-    color: white;
+    color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -355,10 +352,46 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); }
-.main-wrapper main {
+.main-wrapper .main {
   margin: 0 auto;
   width: 960px; }
-  .main-wrapper main .about-image img {
+  .main-wrapper .main .toolbar {
+    margin: 30px 0;
+    display: flex;
+    justify-content: flex-end; }
+    .main-wrapper .main .toolbar-input {
+      padding: 8px 16px; }
+  .main-wrapper .main .post-list-title {
+    text-align: right; }
+  .main-wrapper .main .post-list-item {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px; }
+    .main-wrapper .main .post-list-item .wrapper {
+      margin-left: 20px; }
+      .main-wrapper .main .post-list-item .wrapper .post {
+        padding: 10px 0; }
+        .main-wrapper .main .post-list-item .wrapper .post-description {
+          color: #ea0000;
+          padding: 10px 5px;
+          border-bottom: 1px solid #5f7e8c; }
+        .main-wrapper .main .post-list-item .wrapper .post h3 {
+          color: #00aeae;
+          text-transform: uppercase;
+          margin-block-start: 8px;
+          margin-block-end: 8px; }
+        .main-wrapper .main .post-list-item .wrapper .post p {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 24px;
+          margin-block-start: 0;
+          margin-block-end: 0;
+          /* font: normal 15px/24px; */ }
+      .main-wrapper .main .post-list-item .wrapper button {
+        float: right;
+        margin-top: 20px; }
+  .main-wrapper .main .about-image img {
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -372,8 +405,10 @@ body {
 .btn {
   width: 200px;
   padding: 12px;
-  text-align: center; }
-  .btn-top {
-    background-color: #00aeae; }
+  text-align: center;
+  background-color: #00aeae;
+  outline: none;
+  border: 0;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
