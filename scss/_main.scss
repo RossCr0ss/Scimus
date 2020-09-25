@@ -5,6 +5,22 @@ body {
     background: $color-white
 }
 
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    width: 200px;
+    padding: 12px;
+    text-align: center;
+    background-color: $color-aqua;
+    outline: none;
+    border: 0;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
 .main-wrapper {
     .header {
         width: 100%;
@@ -135,25 +151,63 @@ body {
                 }
             }
         }
+
+        .contact-form {
+            margin-top: 50px;
+
+            h1, h4 {
+                text-align: right;
+                margin: 8px 0;
+                text-transform: uppercase;
+            }
+
+            .form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                &-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    label {
+                        color: $color-aqua;
+                        margin-bottom: 10px;
+                    }
+
+                    input, textarea {
+                        width: calc(100% - 20px);
+                        border-color: $color-aqua;
+                        padding: 10px;
+                    }
+
+                }
+
+                &-item:nth-child(-n+2) {
+                    width: calc(50% - 10px);
+                }
+
+                &-item:first-child {
+                    margin-right: 20px;
+                }
+
+                
+
+
+            }
+        }
     }
 
 
+    .footer {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 10px;
+        text-transform: uppercase;
+    }
+
 }
 
-.responsive-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.btn {
-    width: 200px;
-    padding: 12px;
-    text-align: center;
-    background-color: $color-aqua;
-    outline: none;
-    border: 0;
-    color: $color-white;
-    text-transform: uppercase;
-
-    &-top {}
-}
