@@ -354,7 +354,7 @@ body {
       max-width: 230px; }
     .main-wrapper .header .top-wrapper .nav-menu {
       width: 50%;
-      min-width: 320px;
+      min-width: 120px;
       max-height: 48px;
       display: flex;
       justify-content: space-around; }
@@ -372,6 +372,8 @@ body {
     align-items: center;
     flex-direction: column;
     position: absolute;
+    padding: 0 20px;
+    text-align: center;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -424,7 +426,8 @@ body {
       background-size: cover; }
   .main-wrapper .main .contact-form {
     margin-top: 50px; }
-    .main-wrapper .main .contact-form h1, .main-wrapper .main .contact-form h4 {
+    .main-wrapper .main .contact-form h1,
+    .main-wrapper .main .contact-form h4 {
       text-align: right;
       margin: 8px 0;
       text-transform: uppercase; }
@@ -441,7 +444,8 @@ body {
         .main-wrapper .main .contact-form .form-item label {
           color: #00aeae;
           margin-bottom: 10px; }
-        .main-wrapper .main .contact-form .form-item input, .main-wrapper .main .contact-form .form-item textarea {
+        .main-wrapper .main .contact-form .form-item input,
+        .main-wrapper .main .contact-form .form-item textarea {
           width: calc(100% - 20px);
           border-color: #00aeae;
           padding: 10px; }
@@ -454,5 +458,32 @@ body {
   justify-content: center;
   padding: 30px 0 10px;
   text-transform: uppercase; }
+
+/* 
+** MEDIA QUERIES
+ */
+@media screen and (max-width: 1024px) {
+  .responsive-img {
+    width: 100%;
+    height: auto; }
+
+  .main-wrapper .main {
+    width: calc(100% - 40px); }
+    .main-wrapper .main .post-list-item {
+      flex-direction: column; } }
+@media screen and (max-width: 768px) {
+  .main-wrapper .header .top-wrapper .logo {
+    width: 100px; }
+  .main-wrapper .header .top-wrapper .nav-menu {
+    width: calc(100% - 100px);
+    max-height: 40px; }
+    .main-wrapper .header .top-wrapper .nav-menu-item {
+      padding: 10px 5px; }
+    .main-wrapper .header .top-wrapper .nav-menu-item:last-child {
+      border-right: none; }
+  .main-wrapper .main .contact-form .form-item:nth-child(-n+2) {
+    width: 100%; }
+  .main-wrapper .main .contact-form .form-item:first-child {
+    margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
