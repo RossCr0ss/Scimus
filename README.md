@@ -1,26 +1,21 @@
 # Scimus
 
-Test task with Pure HTML, Grid, SCSS modules and all optimized.
+Test task with Pure HTML, Flexboxes, SCSS modules.
 
 ## FOLDER STRUCTURE
 
 ```sh
-test/*
-    └─ task/
-         └─ design/
-                   └─ templates…
-        └─ doc.docx
-    └─ src/*
-         └─ css/*
-              └─ style.css*
-        └─ img/*
-              └─ images…*
-        └─ scss/*
-              └─ _main.scss*
-              └─ _variables.scss*
-              └─ style.scss*
-        └─ index.html*
-        └─ koala-config.json*	* ¬¬¬- required
+ src/*
+      └─ css/*
+        └─ style.css*
+      └─ img/*
+        └─ images…*
+      └─ scss/*
+        └─ _main.scss*
+        └─ _variables.scss*
+        └─ style.scss*
+      └─ index.html*
+      └─ koala-config.json*	* ¬¬¬- required
 ```
 
 
